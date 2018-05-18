@@ -6,7 +6,7 @@ describe('PageTitleComponent', () => {
     let component: PageTitleComponent;
     let fixture: ComponentFixture<PageTitleComponent>;
 
-    const TEST_DATA: {
+    const TEST_DATA = {
         title: 'Test title',
         differentTitle: 'Test different title'
     };
