@@ -1,0 +1,9 @@
+{
+    "users": [
+        { "name": "Tom" },
+        { "name": "Fred" },
+        { "name": "Mark" },
+        { "name": "Lucy" },
+        { "name": "Anna" }
+    ]
+}
