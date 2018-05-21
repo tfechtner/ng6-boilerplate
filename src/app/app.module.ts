@@ -5,6 +5,9 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './config/routes';
 import { AppComponent } from './app.component';
 
+// Clarity
+import { ClarityModule } from '@clr/angular';
+
 // Pages
 import { HomePageComponent } from './pages/home/home-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
@@ -22,6 +25,7 @@ import { PageTitleComponent } from './components/page-title/page-title.component
     ],
     imports: [
         BrowserModule,
+        ClarityModule,
         RouterModule.forRoot(ROUTES),
     ],
     providers: [],

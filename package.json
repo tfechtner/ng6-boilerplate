@@ -8,7 +8,7 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "jserver" : "json-server --config=json-server/config.json json-server/db.json"
+        "jserver": "json-server --config=json-server/config.json json-server/db.json"
     },
     "private": true,
     "dependencies": {
@@ -21,9 +21,14 @@
         "@angular/platform-browser": "^6.0.0",
         "@angular/platform-browser-dynamic": "^6.0.0",
         "@angular/router": "^6.0.0",
+        "@clr/angular": "^0.11.18-patch.1",
+        "@clr/icons": "^0.11.18-patch.1",
+        "@clr/ui": "^0.11.18-patch.1",
+        "@webcomponents/custom-elements": "^1.0.0",
         "core-js": "^2.5.4",
         "intl": "^1.2.5",
         "rxjs": "^6.0.0",
+        "rxjs-compat": "^6.1.0",
         "zone.js": "^0.8.26"
     },
     "devDependencies": {
