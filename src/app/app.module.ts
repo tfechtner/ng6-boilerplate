@@ -1,12 +1,14 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 
-import { ROUTES } from './config/routes';
 import { AppComponent } from './app.component';
 
 // Clarity
 import { ClarityModule } from '@clr/angular';
+
+// Modules
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 // Pages
 import { HomePageComponent } from './pages/home/home-page.component';
@@ -20,17 +22,19 @@ import { PageTitleComponent } from './components/page-title/page-title.component
         // Pages
         HomePageComponent,
         PageNotFoundComponent,
+        // Components
         HeaderComponent,
         PageTitleComponent
     ],
     imports: [
         BrowserModule,
         ClarityModule,
-        RouterModule.forRoot(ROUTES),
+        AppRoutingModule,
+        DashboardModule
     ],
     providers: [],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    bootstrap: [AppComponent],
+    schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+    bootstrap: [ AppComponent ],
 })
 export class AppModule {
 }
