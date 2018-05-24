@@ -17,6 +17,11 @@ const appRoutes: Routes = [
         component: HomePageComponent,
     },
 
+    {
+        path: 'dashboard',
+        loadChildren: 'app/modules/dashboard/dashboard.module#DashboardModule',
+    },
+
     // 404 page
     {
         path: CONFIG.ROUTING.PAGE_NOT_FOUND,
@@ -24,10 +29,10 @@ const appRoutes: Routes = [
     },
 
     // Page not found
-    // {
-    //     path: '**',
-    //     redirectTo: '/404'
-    // }
+    {
+        path: '**',
+        redirectTo: '/404'
+    }
 ];
 
 @NgModule({

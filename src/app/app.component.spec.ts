@@ -1,5 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { ClarityModule } from '@clr/angular';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ROUTES } from './config/routes';
@@ -11,14 +12,15 @@ describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [
-                RouterTestingModule.withRoutes(ROUTES)
+                RouterTestingModule.withRoutes(ROUTES),
+                ClarityModule,
             ],
             declarations: [
                 AppComponent,
                 HeaderComponent,
                 PageTitleComponent,
                 HomePageComponent,
-                PageNotFoundComponent
+                PageNotFoundComponent,
             ],
         }).compileComponents();
     }));

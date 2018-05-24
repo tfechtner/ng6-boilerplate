@@ -3,16 +3,14 @@
     <nav class="subnav">
         <ul id="demoTabs" class="nav" role="tablist">
             <li role="presentation" class="nav-item">
-                <button id="tab1" class="btn btn-link nav-link active" aria-controls="panel1"
-                        aria-selected="true" type="button">Dashboard</button>
+                <button id="tab1" class="btn btn-link nav-link" aria-controls="panel1"
+                        aria-selected="true" type="button"
+                        routerLink="/dashboard" routerLinkActive="active">Dashboard</button>
             </li>
             <li role="presentation" class="nav-item">
                 <button id="tab2" class="btn btn-link nav-link" aria-controls="panel2"
-                        aria-selected="false" type="button">Management</button>
-            </li>
-            <li role="presentation" class="nav-item">
-                <button id="tab3" class="btn btn-link nav-link" aria-controls="panel3"
-                        aria-selected="false" type="button">Cloud</button>
+                        aria-selected="false" type="button"
+                        routerLink="/dashboard/management" routerLinkActive="active">Management</button>
             </li>
         </ul>
     </nav>

@@ -8,7 +8,6 @@ import { ClarityModule } from '@clr/angular';
 
 // Modules
 import { AppRoutingModule } from './app-routing.module';
-import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 // Pages
 import { HomePageComponent } from './pages/home/home-page.component';
@@ -29,8 +28,7 @@ import { PageTitleComponent } from './components/page-title/page-title.component
     imports: [
         BrowserModule,
         ClarityModule,
-        AppRoutingModule,
-        DashboardModule
+        AppRoutingModule
     ],
     providers: [],
     schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
