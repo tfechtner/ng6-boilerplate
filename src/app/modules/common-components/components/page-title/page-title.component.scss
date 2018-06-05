@@ -1,0 +1,46 @@
+:host {
+    @keyframes fadeInFromRight {
+        0% {
+            opacity: 0;
+            transform: translate3d(50px, 0, 0)
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0)
+        }
+    }
+
+    .animate-page-title {
+
+        .animate-first,
+        .animate-second {
+            animation-timing-function: ease-out;
+            animation-direction: forwards;
+            animation-fill-mode: backwards;
+            animation-play-state: running;
+            animation-iteration-count: 1
+        }
+
+        .animate-first {
+            animation-name: fadeInFromRight;
+            animation-duration: .3s;
+            animation-delay: .2s
+        }
+        .animate-second,
+        .animate-third {
+            animation-name: fadeInFromRight;
+            animation-duration: .4s
+        }
+        .animate-second {
+            animation-delay: .4s
+        }
+        .animate-third {
+            animation-delay: .4s
+        }
+    }
+
+    .page-title {
+        border-bottom: 2px solid #007CBB;
+    }
+}

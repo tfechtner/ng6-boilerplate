@@ -6,7 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ROUTES } from './config/routes';
 import { HomePageComponent } from './pages/home/home-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { PageTitleComponent } from './components/page-title/page-title.component';
+import { PageTitleComponent } from './modules/common-components/components/page-title/page-title.component';
 
 describe('AppComponent', () => {
     beforeEach(async(() => {

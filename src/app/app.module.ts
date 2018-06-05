@@ -8,12 +8,12 @@ import { ClarityModule } from '@clr/angular';
 
 // Modules
 import { AppRoutingModule } from './app-routing.module';
+import { CommonComponentsModule } from './modules/common-components/common-components.module';
 
 // Pages
 import { HomePageComponent } from './pages/home/home-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { HeaderComponent } from './components/header/header.component';
-import { PageTitleComponent } from './components/page-title/page-title.component';
 
 @NgModule({
     declarations: [
@@ -22,13 +22,13 @@ import { PageTitleComponent } from './components/page-title/page-title.component
         HomePageComponent,
         PageNotFoundComponent,
         // Components
-        HeaderComponent,
-        PageTitleComponent
+        HeaderComponent
     ],
     imports: [
         BrowserModule,
         ClarityModule,
-        AppRoutingModule
+        AppRoutingModule,
+        CommonComponentsModule
     ],
     providers: [],
     schemas: [ CUSTOM_ELEMENTS_SCHEMA ],

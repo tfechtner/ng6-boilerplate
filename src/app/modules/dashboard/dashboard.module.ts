@@ -2,6 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Modules
+import { CommonComponentsModule } from '../common-components/common-components.module';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
 // Components
@@ -15,6 +16,7 @@ import { ManagementComponent } from './containers/management/management.componen
     ],
     imports: [
         CommonModule,
+        CommonComponentsModule,
         DashboardRoutingModule
     ],
     exports: [
