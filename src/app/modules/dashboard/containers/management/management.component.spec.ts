@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ManagementComponent } from './management.component';
 import { PageTitleComponent } from '../../../common-components/components/page-title/page-title.component';
+import { ManagementComponent } from './management.component';
 
 describe('ManagementComponent', () => {
     let component: ManagementComponent;

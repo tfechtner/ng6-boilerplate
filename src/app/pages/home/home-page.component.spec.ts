@@ -1,6 +1,7 @@
-import { TestBed, async } from '@angular/core/testing';
-import { HomePageComponent } from './home-page.component';
+import { async, TestBed } from '@angular/core/testing';
+
 import { PageTitleComponent } from '../../modules/common-components/components/page-title/page-title.component';
+import { HomePageComponent } from './home-page.component';
 
 describe('HomePageComponent', () => {
     beforeEach(async(() => {
