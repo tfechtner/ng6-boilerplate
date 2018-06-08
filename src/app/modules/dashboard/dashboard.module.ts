@@ -1,6 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
+// Clarity
+import { ClarityModule } from '@clr/angular';
+
 // Modules
 import { CommonComponentsModule } from '../common-components/common-components.module';
 import { DashboardRoutingModule } from './dashboard-routing.module';
@@ -16,6 +19,7 @@ import { ManagementComponent } from './containers/management/management.componen
     ],
     imports: [
         CommonModule,
+        ClarityModule,
         CommonComponentsModule,
         DashboardRoutingModule
     ],

@@ -9,6 +9,12 @@ const dashboardRoutes: Routes = [
     },
     {
         path: 'management',  component: ManagementComponent
+    },
+    {
+        path: 'management/overview',  component: ManagementComponent
+    },
+    {
+        path: 'management/users',  component: ManagementComponent
     }
 ];
 

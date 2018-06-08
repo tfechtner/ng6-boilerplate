@@ -1,1 +1,14 @@
-<app-page-title [title]="'Management'"></app-page-title>
+<clr-tabs>
+    <clr-tab>
+        <button clrTabLink id="link1">Overview</button>
+        <clr-tab-content id="content1" *clrIfActive>
+            <app-page-title [title]="'Overview'"></app-page-title>
+        </clr-tab-content>
+    </clr-tab>
+    <clr-tab>
+        <button clrTabLink>Users</button>
+        <clr-tab-content *clrIfActive="true">
+            <app-page-title [title]="'Users'"></app-page-title>
+        </clr-tab-content>
+    </clr-tab>
+</clr-tabs>

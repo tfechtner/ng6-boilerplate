@@ -1,25 +1,46 @@
 <div class="main-container">
     <app-header></app-header>
-    <nav class="subnav">
-        <ul id="demoTabs" class="nav" role="tablist">
-            <li role="presentation" class="nav-item">
-                <button id="tab1" class="btn btn-link nav-link" aria-controls="panel1"
-                        aria-selected="true" type="button"
-                        routerLink="/dashboard" routerLinkActive="active">Dashboard</button>
-            </li>
-            <li role="presentation" class="nav-item">
-                <button id="tab2" class="btn btn-link nav-link" aria-controls="panel2"
-                        aria-selected="false" type="button"
-                        routerLink="/dashboard/management" routerLinkActive="active">Management</button>
-            </li>
-        </ul>
-    </nav>
     <div class="content-container">
         <div class="content-area">
             <router-outlet></router-outlet>
         </div>
         <!--<nav class="sidenav">-->
-
+            <!--<section class="sidenav-content">-->
+                <!--<a class="nav-link"-->
+                   <!--routerLink="/dashboard" routerLinkActive="active">-->
+                    <!--<clr-icon shape="view-cards"></clr-icon> Dashboard-->
+                <!--</a>-->
+                <!--<a class="nav-link"-->
+                   <!--routerLink="/dashboard/management" routerLinkActive="active">-->
+                    <!--Management-->
+                <!--</a>-->
+                <!--<section class="nav-group collapsible">-->
+                    <!--<input id="tabexample1" type="checkbox">-->
+                    <!--<label for="tabexample1">Collapsible Nav Element</label>-->
+                    <!--<ul class="nav-list">-->
+                        <!--<li><a class="nav-link">Link 1</a></li>-->
+                        <!--<li><a class="nav-link">Link 2</a></li>-->
+                    <!--</ul>-->
+                <!--</section>-->
+                <!--<section class="nav-group">-->
+                    <!--<input id="tabexample2" type="checkbox">-->
+                    <!--<label for="tabexample2">Default Nav Element</label>-->
+                    <!--<ul class="nav-list">-->
+                        <!--<li><a class="nav-link">Link 1</a></li>-->
+                        <!--<li><a class="nav-link">Link 2</a></li>-->
+                    <!--</ul>-->
+                <!--</section>-->
+            <!--</section>-->
         <!--</nav>-->
+        <clr-vertical-nav [clrVerticalNavCollapsible]="true" [(clrVerticalNavCollapsed)]="collapsed" class="nav-trigger--bottom">
+            <a clrVerticalNavLink routerLink="/dashboard" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="user"></clr-icon>
+                Dashboard
+            </a>
+            <a clrVerticalNavLink routerLink="/dashboard/management" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="user"></clr-icon>
+                Management
+            </a>
+        </clr-vertical-nav>
     </div>
 </div>
