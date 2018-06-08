@@ -1,6 +1,6 @@
 import { async, TestBed } from '@angular/core/testing';
 
-import { PageTitleComponent } from '../../modules/common-components/components/page-title/page-title.component';
+import { PageTitleComponent } from '../../common-modules/common-components/components/page-title/page-title.component';
 import { HomePageComponent } from './home-page.component';
 
 describe('HomePageComponent', () => {

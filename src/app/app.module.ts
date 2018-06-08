@@ -2,6 +2,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { APP_ID, CUSTOM_ELEMENTS_SCHEMA, Inject, NgModule, PLATFORM_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { VERSION } from 'environments/version';
 import { AppComponent } from './app.component';
 
 // Clarity
@@ -9,7 +10,7 @@ import { ClarityModule } from '@clr/angular';
 
 // Modules
 import { AppRoutingModule } from './app-routing.module';
-import { CommonComponentsModule } from './modules/common-components/common-components.module';
+import { CommonComponentsModule } from './common-modules/common-components/common-components.module';
 
 // Pages
 import { HeaderComponent } from './components/header/header.component';
@@ -41,6 +42,7 @@ export class AppModule {
         @Inject(APP_ID) private appId: string) {
         const platform = isPlatformBrowser(platformId) ?
             'in the browser' : 'on the server';
-        console.log(`Running ${platform} with appId=${appId}`);
+        console.log(`Running ${platform} with appId=${appId} and version=${VERSION.version}`);
+
     }
 }

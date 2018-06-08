@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageTitleComponent } from '../../modules/common-components/components/page-title/page-title.component';
+import { PageTitleComponent } from '../../common-modules/common-components/components/page-title/page-title.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 
 describe('PageNotFoundComponent', () => {

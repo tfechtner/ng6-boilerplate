@@ -12,7 +12,8 @@
         "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
         "serve:ssr": "node dist/server",
         "build:client-and-server-bundles": "ng build --prod && ng run ng6-boilerplate:server",
-        "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
+        "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
+        "postinstall": "node scripts/version.ts"
     },
     "pre-commit": {
         "run": "lint"
@@ -27,7 +28,7 @@
         "@angular/http": "^6.0.0",
         "@angular/platform-browser": "^6.0.0",
         "@angular/platform-browser-dynamic": "^6.0.0",
-        "@angular/platform-server": "^6.0.3",
+        "@angular/platform-server": "^6.0.0",
         "@angular/router": "^6.0.0",
         "@clr/angular": "^0.11.18-patch.1",
         "@clr/icons": "^0.11.18-patch.1",
@@ -51,6 +52,7 @@
         "@types/jasminewd2": "~2.0.3",
         "@types/node": "~8.9.4",
         "codelyzer": "~4.2.1",
+        "git-describe": "^4.0.2",
         "jasmine-core": "~2.99.1",
         "jasmine-spec-reporter": "~4.2.1",
         "json-server": "^0.12.2",
